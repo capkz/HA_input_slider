@@ -1,0 +1,205 @@
+# Example Lovelace Configuration for Slider Button Card
+
+# Single Card Example
+type: custom:slider-button-card
+entity: light.living_room
+
+# ===================================
+# Full Configuration Example
+# ===================================
+
+type: custom:slider-button-card
+entity: light.bedroom
+name: Bedroom Light
+icon: mdi:ceiling-light
+
+# ===================================
+# Grid Layout Example (2 columns)
+# ===================================
+
+type: grid
+columns: 2
+square: false
+cards:
+  - type: custom:slider-button-card
+    entity: light.living_room
+    name: Living Room
+    icon: mdi:sofa
+
+  - type: custom:slider-button-card
+    entity: light.bedroom
+    name: Bedroom
+    icon: mdi:bed
+
+  - type: custom:slider-button-card
+    entity: light.kitchen
+    name: Kitchen
+    icon: mdi:silverware-fork-knife
+
+  - type: custom:slider-button-card
+    entity: light.bathroom
+    name: Bathroom
+    icon: mdi:shower
+
+# ===================================
+# Vertical Stack Example
+# ===================================
+
+type: vertical-stack
+cards:
+  - type: custom:slider-button-card
+    entity: light.hallway
+    name: Hallway
+    icon: mdi:door
+
+  - type: custom:slider-button-card
+    entity: light.stairs
+    name: Stairs
+    icon: mdi:stairs
+
+  - type: custom:slider-button-card
+    entity: light.garage
+    name: Garage
+    icon: mdi:garage
+
+# ===================================
+# Complete Dashboard Example
+# ===================================
+
+title: My Home
+views:
+  - title: Lights
+    path: lights
+    icon: mdi:lightbulb
+    cards:
+      # Main Rooms Grid
+      - type: custom:slider-button-card
+        entity: light.all_lights
+        name: All Lights
+        icon: mdi:lightbulb-group
+
+      - type: grid
+        columns: 2
+        square: false
+        cards:
+          - type: custom:slider-button-card
+            entity: light.living_room
+            name: Living Room
+            icon: mdi:sofa
+
+          - type: custom:slider-button-card
+            entity: light.dining_room
+            name: Dining Room
+            icon: mdi:silverware-fork-knife
+
+          - type: custom:slider-button-card
+            entity: light.kitchen
+            name: Kitchen
+            icon: mdi:chef-hat
+
+          - type: custom:slider-button-card
+            entity: light.office
+            name: Office
+            icon: mdi:desk
+
+      # Bedrooms Section
+      - type: markdown
+        content: "## Bedrooms"
+
+      - type: grid
+        columns: 2
+        square: false
+        cards:
+          - type: custom:slider-button-card
+            entity: light.master_bedroom
+            name: Master Bedroom
+            icon: mdi:bed-king
+
+          - type: custom:slider-button-card
+            entity: light.kids_room
+            name: Kids Room
+            icon: mdi:bed-single
+
+          - type: custom:slider-button-card
+            entity: light.guest_room
+            name: Guest Room
+            icon: mdi:bed-double
+
+      # Other Areas
+      - type: markdown
+        content: "## Other Areas"
+
+      - type: grid
+        columns: 3
+        square: false
+        cards:
+          - type: custom:slider-button-card
+            entity: light.hallway
+            name: Hallway
+            icon: mdi:door
+
+          - type: custom:slider-button-card
+            entity: light.bathroom
+            name: Bathroom
+            icon: mdi:shower
+
+          - type: custom:slider-button-card
+            entity: light.garage
+            name: Garage
+            icon: mdi:garage
+
+# ===================================
+# Horizontal Stack Example (Mobile-friendly)
+# ===================================
+
+type: horizontal-stack
+cards:
+  - type: custom:slider-button-card
+    entity: light.bedside_left
+    name: Left
+    icon: mdi:lamp
+
+  - type: custom:slider-button-card
+    entity: light.bedside_right
+    name: Right
+    icon: mdi:lamp
+
+# ===================================
+# With Different Icon Examples
+# ===================================
+
+# Ceiling Light
+type: custom:slider-button-card
+entity: light.ceiling
+name: Ceiling
+icon: mdi:ceiling-light
+
+# Floor Lamp
+type: custom:slider-button-card
+entity: light.floor_lamp
+name: Floor Lamp
+icon: mdi:floor-lamp
+
+# Desk Lamp
+type: custom:slider-button-card
+entity: light.desk_lamp
+name: Desk Lamp
+icon: mdi:desk-lamp
+
+# LED Strip
+type: custom:slider-button-card
+entity: light.led_strip
+name: LED Strip
+icon: mdi:led-strip
+
+# Wall Sconce
+type: custom:slider-button-card
+entity: light.wall_sconce
+name: Wall Sconce
+icon: mdi:wall-sconce
+
+# Outdoor Light
+type: custom:slider-button-card
+entity: light.front_porch
+name: Front Porch
+icon: mdi:outdoor-lamp
