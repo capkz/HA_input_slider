@@ -1,8 +1,8 @@
 # Slider Button Card for Home Assistant
 
-A custom Lovelace card that combines a toggle button with a slider, inspired by iOS control center. Tap to toggle lights on/off, or slide to adjust brightness - all in one elegant card.
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
-![Slider Button Card Demo](https://img.shields.io/badge/Home%20Assistant-Custom%20Card-blue)
+A custom Lovelace card that combines a toggle button with a slider, inspired by iOS control center. Tap to toggle lights on/off, or slide to adjust brightness - all in one elegant card.
 
 ## Features
 
